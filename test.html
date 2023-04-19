@@ -185,6 +185,34 @@
 <br>
 <br>
 <br>
+<button onclick="topFunction()" id="myBtn">Go to top</button>
+
+<div id="myDiv" style="height: 1000px; background-color: #1abc9c;"></div> <!-- This is the div that we want to check if the user has scrolled to -->
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+    let mydiv = document.getElementById("myDiv");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        
+        // Check if user has scrolled to the target div
+        if (mydiv.getBoundingClientRect().top <= window.innerHeight && mydiv.getBoundingClientRect().bottom >= 0) {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 
 

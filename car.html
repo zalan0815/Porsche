@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="pic/Porsche-Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="button.css">
 </head>
 <body>
+  <button class="" onclick="topFunction()" id="myBtn" title="Go to top"><img id="myImage" src="pic/myarrownagy.png" alt=""></button>
+  
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <div class="container-fluid ">
         <div class="col-2 mt-0">
@@ -53,7 +56,7 @@
     <div class="carousel-caption top-0" style="z-index: 1;">
       <div class="mt-3 mb-4">
         <h1 id="Myh1" class="align-middle text-center">
-            Melyika kedvenced? <span id="autok"></span>
+            Melyik a kedvenced? <span id="autok"></span>
         </h1>
       </div>
     </div>
@@ -291,7 +294,7 @@
     </div>
     <div class="pt-5 mx-auto text-center">
       <a href="https://dealer.porsche.com/hu/budapest/hu-HU/Modellek/Macan" target="_blank">
-        <button  id="riipple-button" style="--button-color: rgb(13, 110, 253); --button-hover-color: rgb(13, 110, 253); --button-color-after: black;">
+        <button  id="riipple-button" style="--button-color: rgb(13, 110, 253); --button-hover-color: rgb(70, 185, 253); --button-color-after: black;">
           Vásárlás
         </button>
       </a>
@@ -305,7 +308,7 @@
    <div class="py-1 bg-primary"></div>
 
   <div>
-    <h1 id="A911" class="text-center text-dark bg-secondary"></h1>
+    <h1 id="A911"></h1>
   </div>
   <div class="carsdiv text-center py-2 mb-5">
     <div class="container">
@@ -372,6 +375,13 @@
         </table>
       </div>
     </div>
+    <div class="pt-5 mx-auto text-center">
+      <a href="https://dealer.porsche.com/hu/budapest/hu-HU/Modellek/911-Carrera-and-Targa" target="_blank">
+        <button  id="riipple-button" style="--button-color: rgb(220, 53, 69); --button-hover-color: rgb(255, 107, 107); --button-color-after: black;">
+          Vásárlás
+        </button>
+      </a>
+    </div>
   </div>
   <!-- <div class="d-grid gap-2">
     <button class="btn btn-danger" type="button"><a id="mybrand" href="https://dealer.porsche.com/hu/budapest/hu-HU/Modellek/911-Carrera-and-Targa" target="_blank">Buy it now</a></button>
@@ -379,7 +389,7 @@
   <div class="py-1 bg-danger"></div>
 
   <div>
-    <h1 id="A718" class="text-center text-dark bg-success"></h1>
+    <h1 id="A718"></h1>
   </div>
   <div id="Bigh1" class="text-white text-center mb-3">Porsche <span class="text-success">718</span></div>
   <div>
@@ -457,6 +467,13 @@
         </table>
       </div>
     </div>
+    <div class="pt-5 mx-auto text-center">
+      <a href="https://dealer.porsche.com/hu/budapest/hu-HU/Modellek/718" target="_blank">
+        <button  id="riipple-button" style="--button-color: rgb(25, 135, 84); --button-hover-color: rgb(56, 238, 153); --button-color-after: black;">
+          Vásárlás
+        </button>
+      </a>
+    </div>
   </div>
   <!-- <div class="d-grid gap-2">
     <button class="btn btn-success" type="button"><a id="mybrand" href="https://dealer.porsche.com/hu/budapest/hu-HU/Modellek/718" target="_blank">Buy it now</a></button>
@@ -464,7 +481,7 @@
   <div class="py-1 bg-success"></div>
 
   <div>
-    <h1 id="APanamera" class="text-center text-dark bg-primary"></h1>
+    <h1 id="APanamera"></h1>
   </div>
   <div class="carsdiv text-center py-2 mb-2">
     <div class="container">
@@ -531,6 +548,13 @@
         </table>
       </div>
     </div>
+    <div class="pt-5 mx-auto text-center">
+      <a href="https://dealer.porsche.com/hu/budapest/hu-HU/Modellek/Panamera" target="_blank">
+        <button  id="riipple-button" style="--button-color: rgb(13, 110, 253); --button-hover-color: rgb(70, 185, 253); --button-color-after: black;">
+          Vásárlás
+        </button>
+      </a>
+    </div> 
   </div>
   <!-- <div class="d-grid gap-2">
     <button class="btn btn-primary" type="button"><a id="mybrand" href="https://dealer.porsche.com/hu/budapest/hu-HU/Modellek/Panamera" target="_blank">Buy it now</a></button>
@@ -538,7 +562,7 @@
   <div class="py-1 bg-primary"></div>
 
   <div>
-    <h1 id="ATaycan" class="text-center text-dark bg-success"></h1>
+    <h1 id="ATaycan"></h1>
   </div>
   <div id="Bigh1" class="text-white text-center">Porsche <span class="text-success">Taycan</span></div>
   <div>
@@ -609,20 +633,56 @@
         </table>
       </div>
     </div>
-  </div> 
+    <div class="pt-5 mx-auto text-center">
+      <a href="https://dealer.porsche.com/hu/budapest/hu-HU/Modellek/Taycan" target="_blank">
+        <button  id="riipple-button" style="--button-color: rgb(25, 135, 84); --button-hover-color: rgb(56, 238, 153); --button-color-after: black;">
+          Vásárlás
+        </button>
+      </a>
+    </div> 
+  </div>
   <!-- <div class="d-grid gap-2">
     <button class="btn btn-success" type="button"><a id="mybrand" href="https://dealer.porsche.com/hu/budapest/hu-HU/Modellek/Taycan" target="_blank">Buy it now</a></button>
   </div> -->
   <div class="py-1 bg-success"></div>
   <div class="py-1 bg-black">
-    <br><br><br>
+    
   </div>
-  <div class="d-grid gap-2">
-    <button onclick="oldalTeteje()" class="btn btn-warning" type="button">
+  <div id="myDiv" class="py-3 mx-auto text-center">
+    <button id="riipple-button" style="--button-color: rgb(33, 37, 41) ; --button-hover-color: rgb(76, 84, 92); --button-color-after: white;" onclick="oldalTeteje()" class="btn btn-warning" type="button">
       <h2 class=""><span id="" class=""><img  src="kepek/felnyil.png" alt=""> Vissza a tetejére</span></h2>
     </button>  
   </div>
-    
+
+  <button onclick="topFunction()" id="myBtn">Go to top</button>
+
+      
+      <script>
+          let mybutton = document.getElementById("myBtn");
+          let mydiv = document.getElementById("myDiv");     
+
+          window.onscroll = function() {scrollFunction()};      
+
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  mybutton.style.display = "block";
+              } else {
+                  mybutton.style.display = "none";
+              }
+
+              // Check if user has scrolled to the target div
+              if (mydiv.getBoundingClientRect().top <= window.innerHeight && mydiv.getBoundingClientRect().bottom >= 0) {
+                  mybutton.style.display = "none";
+              } 
+          }     
+
+          function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+          }
+      </script>
+      
+  
       <script>
         let gombom = document.getElementById("gomb")
       

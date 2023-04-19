@@ -319,4 +319,29 @@
     background-color: var(--button-hover-color);
     transition: all 0.5s ease-out;
   }
+
+
+
+
+
+  #myBtn {
+    transition: 0.5s ease-in-out;
+    display: none; 
+    position: fixed;
+    bottom: 5px; 
+    right: 5px; 
+    z-index: 99; /* Make sure it does not overlap */
+    border: none;
+    outline: none;
+    background-color: rgba(121, 121, 121, 0.596);
+    color: white; /* Text color */
+    padding: 5px;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 15px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
   
+  #myBtn:hover {
+    transform: scale(1.1);
+    background-color: rgb(250, 200, 0); 
+  }
