@@ -226,9 +226,35 @@ style =
     margin: 0;
     margin-bottom: 10px;
   }
-#korvonal{  
+#korvonal{
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-out;
 }
+#kepreirt{  
+  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-out;
+}
+  #kepreirt:hover{
+    transform: scale(101%);
+  }
+  #kepreirt:hover #korvonal{
+    transform: scale(110%);
+  }
+#activate-div{
+  display: none;
+}
+  #activate-div:checked ~ label #korvonal{
+    transform: translateY(101%);
+    color: black !important;
+  }
+#activate-div2{
+  display: none;
+  }
+    #activate-div2:checked ~ label #korvonal{
+      transform: translateY(101%);
+      color: black !important;
+    }
 .card-body{
   text-align: center;
 }
@@ -237,6 +263,27 @@ style =
   padding: 1.5%;
 }
 h1{
-  font-size: 1cm;
-  padding-top: 0.5%;
+  font-size: 1.2cm;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+  a:hover{
+    color: grey;
+    transform: scale(105%);
+  }
+#leiras{
+  text-align: center;
+}
+.more{
+  margin-top: 2%;
+}
+#title{
+  padding-top: 5%;
+}
+p{
+  font-size: 0.7cm;
 }
