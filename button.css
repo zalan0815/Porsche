@@ -1,0 +1,322 @@
+#cool-button {
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+  }
+  
+  #cool-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+  }
+  
+  #cool-button:hover {
+    background-color: #2ecc71;
+    transform: translateY(-5px);
+  }
+  
+  #cool-button:hover:before {
+    width: 400px;
+    height: 400px;
+    transition: all 0.5s ease-out;
+  }
+  #round-button {
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #round-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+  }
+  
+  #round-button:hover:before {
+    width: 200px;
+    height: 200px;
+    transition: all 0.5s ease-out;
+  }
+  
+  #round-button:hover {
+    background-color: #2ecc71;
+    box-shadow: 0 0 20px #2ecc71;
+    transform: translateY(-5px);
+  }
+  #border-button {
+    border: 2px solid #3498db;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3498db;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #border-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(52, 152, 219, 0.5);
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+  }
+  
+  #border-button:hover:before {
+    width: 300px;
+    height: 300px;
+    transition: all 0.5s ease-out;
+  }
+  
+  #border-button:hover {
+    color: #fff;
+    background-color: #3498db;
+  }
+  #pulse-button {
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e74c3c;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #pulse-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+  }
+  
+  #pulse-button:hover:before {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+  }
+  
+  #pulse-button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 0 20px #c0392b;
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+  }
+
+
+
+  
+  #slide-button {
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1abc9c;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #slide-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #16a085;
+    transition: all 0.5s ease-out;
+  }
+  
+  #slide-button:hover:before {
+    left: 0;
+    transition: all 0.5s ease-out;
+  }
+  
+  #slide-button span {
+    position: relative;
+    z-index: 2;
+  }
+  
+  #slide-button:hover {
+    color: #ffffff;
+    background-color: #fff;
+    transition: all 0.5s ease-out;
+  }
+  #ripple-button {
+    position: relative;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1abc9c;
+    padding: 15px 30px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #ripple-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-out;
+  }
+  
+  #ripple-button:hover:before {
+    width: 400px;
+    height: 400px;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+  }
+  
+  #ripple-button:hover {
+    color: #000000;
+    background-color: rgb(26, 220, 156);
+    transition: all 0.5s ease-out;
+  }
+
+
+
+
+
+
+/* ripple-button white  */
+  #riipple-buttonw {
+    position: relative;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--button-color);
+    padding: 15px 30px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #riipple-buttonw:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    /* background-color: rgba(0, 0, 0, 0.027); */
+    border-radius: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-out;
+  }
+  
+  #riipple-buttonw:hover:before {
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+  }
+  
+  #riipple-buttonw:hover {
+    color: white;
+    background-color: var(--button-hover-color);
+    transition: all 0.5s ease-out;
+  }
+
+
+
+
+
+
+
+  /* ripple-button balack */
+  #riipple-buttonb {
+    position: relative;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: var(--button-color);
+    padding: 15px 30px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #riipple-buttonb:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    /* background-color: rgba(0, 0, 0, 0.027); */
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-out;
+  }
+  
+  #riipple-buttonb:hover:before {
+    width: 400px;
+    height: 400px;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+  }
+  
+  #riipple-buttonb:hover {
+    color: black;
+    background-color: var(--button-hover-color);
+    transition: all 0.5s ease-out;
+  }
+  
