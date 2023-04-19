@@ -176,7 +176,7 @@ style =
  */
 
 /* ripple-button white  */
-#riipple-buttonw {
+#riipple-button {
   transition: 0.5s ease-in-out;
   position: relative;
   border: none;
@@ -190,7 +190,7 @@ style =
   cursor: pointer;
 }
 
-#riipple-buttonw:before {
+#riipple-button:before {
   content: '';
   position: absolute;
   top: 50%;
@@ -203,55 +203,14 @@ style =
   transition: all 0.5s ease-out;
 }
 
-#riipple-buttonw:hover:before {
+#riipple-button:hover:before {
   width: 400px;
   height: 400px;
   opacity: 0;
   transition: all 0.5s ease-out;
 }
 
-#riipple-buttonw:hover {
-  transform: scale(1.1);
-  color: var(--button-color-after);
-  background-color: var(--button-hover-color);
-  transition: all 0.5s ease-out;
-}
-
-/* ripple-button balack */
-#riipple-buttonb {
-  transition: 0.5s ease-in-out;
-  position: relative;
-  border: none;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: bold;
-  color: black;
-  background-color: var(--button-color);
-  overflow: hidden;
-  cursor: pointer;
-}
-
-#riipple-buttonb:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: all 0.5s ease-out;
-}
-
-#riipple-buttonb:hover:before {
-  width: 400px;
-  height: 400px;
-  opacity: 1;
-  transition: all 0.5s ease-out;
-}
-
-#riipple-buttonb:hover {
+#riipple-button:hover {
   transform: scale(1.1);
   color: var(--button-color-after);
   background-color: var(--button-hover-color);
