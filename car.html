@@ -604,35 +604,41 @@
   </div>
   <div class="py-1 bg-success"></div>
   <div class="carsdiv text-start bg-dark py-5">
-    <div class="container">
-      <div>
-        <table class=" ">
-          <tr>
-            <th colspan="2"><h1 id="Bigh1" class="pb-5 border-bottom border-success ">Modellek</h1></th>
-          </tr>
-          <tr>
-            <td id="Myfs1" class="#Bigh1 pe-5  ">S</td>
-            <td id="Myfs5" class="border-bottom border-success  py-5 ">2,5 literes, turbófeltöltésű boxermotor 350 lóerővel és 420 Nm nyomatékkal.</td>
-          </tr>
-          <tr>
-            <td id="Myfs1" class="#Bigh1 pe-5 ">T</td>
-            <td id="Myfs5" class="border-bottom border-success  py-5 ">2,0 literes, turbófeltöltésű boxermotor 300 lóerővel és 380 Nm nyomatékkal.</td>
-          </tr>
-          <tr>
-            <td id="Myfs1" class="#Bigh1 pe-5 ">GTS</td>
-            <td id="Myfs5" class="border-bottom border-success  py-5 ">4,0 literes, szívó, hathengeres boxermotor 400 lóerővel és 420 Nm nyomatékkal. PDK duplakuplungos automata váltó esetén 430 Nm nyomatékkal.</td>
-          </tr>
-          <tr>
-            <td id="Myfs1" class="#Bigh1 pe-5 pe-5 ">Spyder</td>
-            <td id="Myfs5" class="border-bottom border-success  py-5 ">Boxermotor. Hat henger. Négy liter. Maximális fordulatszám: 8000/perc. 420 lóerő 5000-től egészen 6800-ig. PDK duplakuplungos automata váltóval 430 Nm nyomaték 5500-nál. Nem csoda, hogy a 718 Spyder PDK-val és rajtautomatikával mindössze 3,9 másodperc alatt gyorsul álló helyzetből 100 km/h-ra. A végsebesség pedig 301 km/h.</td>
-          </tr>
-          <tr>
-            <td id="Myfs1" class="#Bigh1 pe-5 " width="150px">GT4</td>
-            <td id="Myfs5" class="border-bottom border-success  py-5 ">Szívó boxermotor, pont középen. 4-literes hengerűrtartalom. Hat henger. 420 lóerő. Őrült hang. Őrült menetteljesítmények.</td>
-          </tr>
-        </table>
+    <button class="dropdown-button ">Tudj meg többet</button>
+      <div class="dropdown-content">
+        <div class="carsdiv text-start bg-dark py-5">
+          <div class="container">
+            <div>
+              <table class=" ">
+                <tr>
+                  <th colspan="2"><h1 id="Bigh1" class="pb-5 border-bottom border-success ">Modellek</h1></th>
+                </tr>
+                <tr>
+                  <td id="Myfs1" class="#Bigh1 pe-5  ">S</td>
+                  <td id="Myfs5" class="border-bottom border-success  py-5 ">2,5 literes, turbófeltöltésű boxermotor 350 lóerővel és 420 Nm nyomatékkal.</td>
+                </tr>
+                <tr>
+                  <td id="Myfs1" class="#Bigh1 pe-5 ">T</td>
+                  <td id="Myfs5" class="border-bottom border-success  py-5 ">2,0 literes, turbófeltöltésű boxermotor 300 lóerővel és 380 Nm nyomatékkal.</td>
+                </tr>
+                <tr>
+                  <td id="Myfs1" class="#Bigh1 pe-5 ">GTS</td>
+                  <td id="Myfs5" class="border-bottom border-success  py-5 ">4,0 literes, szívó, hathengeres boxermotor 400 lóerővel és 420 Nm nyomatékkal. PDK duplakuplungos automata váltó esetén 430 Nm nyomatékkal.</td>
+                </tr>
+                <tr>
+                  <td id="Myfs1" class="#Bigh1 pe-5 pe-5 ">Spyder</td>
+                  <td id="Myfs5" class="border-bottom border-success  py-5 ">Boxermotor. Hat henger. Négy liter. Maximális fordulatszám: 8000/perc. 420 lóerő 5000-től egészen 6800-ig. PDK duplakuplungos automata váltóval 430 Nm nyomaték 5500-nál. Nem csoda, hogy a 718 Spyder PDK-val és rajtautomatikával mindössze 3,9 másodperc alatt gyorsul álló helyzetből 100 km/h-ra. A végsebesség pedig 301 km/h.</td>
+                </tr>
+                <tr>
+                  <td id="Myfs1" class="#Bigh1 pe-5 " width="150px">GT4</td>
+                  <td id="Myfs5" class="border-bottom border-success  py-5 ">Szívó boxermotor, pont középen. 4-literes hengerűrtartalom. Hat henger. 420 lóerő. Őrült hang. Őrült menetteljesítmények.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+  </div>
     <div class="pt-5 mx-auto text-center">
       <a href="https://dealer.porsche.com/hu/budapest/hu-HU/Modellek/Taycan" target="_blank">
         <button  id="riipple-button" style="--button-color: rgb(25, 135, 84); --button-hover-color: rgb(56, 238, 153); --button-color-after: black;">
@@ -656,6 +662,15 @@
 
   <button onclick="topFunction()" id="myBtn">Go to top</button>
 
+
+      <script>
+        const button = document.querySelector('.dropdown-button');
+        const content = document.querySelector('.dropdown-content');
+      
+        button.addEventListener('click', function() {
+          content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        });
+      </script>
       
       <script>
           let mybutton = document.getElementById("myBtn");
