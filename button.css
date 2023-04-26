@@ -345,3 +345,30 @@
     transform: scale(1.1);
     background-color: rgb(250, 200, 0); 
   }
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+  display: none;
+}
+
+/* Style the button */
+.dropdown-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+
+
+
+
+
