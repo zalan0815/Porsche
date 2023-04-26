@@ -78,7 +78,7 @@
                 <div class="card w-100 container-fluid p-0" id="mindenOff">
                     <img src="pic/911dakar.jpg" alt="911 Dakar" class="card-img d-block w-100 p-0">
                     <div class="card-img-overlay p-0" id="text-bottom">
-                        <h1 class="card-title text-center text-white" id="korvonal">Bemutatkozik az új Porshce 911 Dakar</h1>
+                        <h1 class="card-title text-center text-white" id="korvonal">Új Porshce 911 Dakar</h1>
                     </div>        
                 </div>
             </label>
@@ -104,19 +104,19 @@
         <h3 class="text-center">Legnépszerűbb modelleink:</h3>
         <div class="container-fluid pt-1">
             <div class="row w-100">
-                <div class="card col-sm-12 w-100 p-0 mx-auto" id="mindenOff">
+                <div class="card col-lg-4 col-md-12 p-0 mx-auto" id="mindenOff">
                     <a href="car.html">
                         <img src="pic/911.4.png" alt="" class="card-body d-block w-100 p-0">
                         <h1 class="p-0" id="leiras">911</h1>
                     </a>
                 </div>
-                <div class="card col-sm-12 w-100 p-0 mx-auto" id="mindenOff">
+                <div class="card col-lg-4 col-md-12 p-0 mx-auto" id="mindenOff">
                     <a href="car.html">
                         <img src="pic/taycan.1.png" alt="" class="card-body d-block w-100 p-0">
                         <h1 class="p-0" id="leiras">Taycan</h1>
                     </a>
                 </div>
-                <div class="card col-sm-12 w-100 p-0 mx-auto" id="mindenOff">
+                <div class="card col-lg-4 col-md-12 p-0 mx-auto" id="mindenOff">
                     <a href="car.html">
                         <img src="pic/cayenne.4.png" alt="" class="card-body d-block w-100 p-0">
                         <h1 class="p-0" id="leiras">Cayenne</h1>
@@ -131,10 +131,10 @@
     <div class="container-fluid w-100" id="mindenOff">
         <h1 class="text-center py-5">Lépjen velünk kapcsolatba</h1>
         <div class="row w-100" id="mindenOff">
-            <div class="card col w-100" id="mindenOff">
+            <div class="card col-lg-6 col-md-12" id="mindenOff">
                 <iframe class="mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.085150325524!2d19.041424115625063!3d47.44927957917461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd9d2d56c245%3A0x1a9b56076cb2a754!2sPorsche%20Centrum%20Budapest!5e0!3m2!1shu!2shu!4v1681901288043!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="card col w-100" id="mindenOff">
+            <div class="card col-lg-6 col-md-12 asdasd" id="mindenOff">
                 <h2 class="pb-1 pe-5">Porsche Inter Auto Hungaria Kft. Porsche Centrum Budapest</h2>
                 <li><span id="spanocska">cím:</span><a href="https://www.google.com/maps?t=m&hl=hu&gl=HU&cid=1917220656264685396" id="connect"> Szerémi út 63. 1117 Budapest Magyarország</a></li>
                 <li><span id="spanocska">telefonszám:</span><a href="tel: +3613823000" id="connect"> +3613823000</a></li>
@@ -171,6 +171,28 @@
             backSpeed: 150,
             loop: true
         })
+
+        let myCheckbox = document.getElementById("activate-div");
+        let lastClickTime = 0;
+
+        myCheckbox.addEventListener("click", function(event) {
+            let currentTime = new Date().getTime();
+            if (currentTime - lastClickTime < 500) {
+            event.preventDefault();
+            }
+            lastClickTime = currentTime;
+        });
+
+        let myCheckbox2 = document.getElementById("activate-div2");
+        let lastClickTime2 = 0;
+
+        myCheckbox2.addEventListener("click", function(event) {
+            let currentTime2 = new Date().getTime();
+            if (currentTime2 - lastClickTime2 < 500) {
+            event.preventDefault();
+            }
+            lastClickTime2 = currentTime2;
+        });
       </script>
       <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </body>

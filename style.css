@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 #navborder{
     border-radius: 8px;
     border: 2px solid black;
@@ -247,13 +251,15 @@ style =
   #activate-div:checked ~ label #korvonal{
     transform: translateY(101%);
     color: black !important;
+    text-shadow: none !important;
   }
 #activate-div2{
   display: none;
   }
     #activate-div2:checked ~ label #korvonal{
-      transform: translateY(101%);
+      transform: translateY(105%);
       color: black !important;
+      text-shadow: none !important;
     }
 .card-body{
   text-align: center;
@@ -329,3 +335,34 @@ a{
   .logo:hover{
     transform: scale(120%);
   }
+@media screen and (max-width: 1000px){
+  .asdasd{
+    text-align: center;
+  }
+  .card-title{
+    font-size: 300%;
+  }
+  #korvonal{
+    text-shadow: none;
+  }
+  iframe{
+    width: 100%;
+  }
+  h1{
+    font-size: 75%;
+  }
+  p{
+    font-size: 75%;
+  }
+}
+@media screen and (max-width: 500px){
+  .card-title{
+    font-size: 150%;
+  }
+  #activate-div:checked ~ label #korvonal{
+    transform: translateY(120%);
+  }
+  #activate-div2:checked ~ label #korvonal{
+    transform: translateY(150%);
+  }
+}
