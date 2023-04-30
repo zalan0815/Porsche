@@ -187,6 +187,7 @@
     background-color: #fff;
     transition: all 0.5s ease-out;
   }
+  
   #ripple-button {
     position: relative;
     border: none;
@@ -272,6 +273,24 @@
     background-color: var(--button-hover-color);
     transition: all 0.5s ease-out;
   }
+  #TextMoves{
+  transition: 0.5s ease-in-out;
+  color: #c7c7c7;
+  }
+
+  #TextMoves:hover{
+    color: white;
+    transform: scale(1.05);
+  }
+
+  #TextMovesBig{
+    transition: 0.5s ease-in-out;
+  }
+  
+  #TextMovesBig:hover{
+    transform: scale(1.05);
+  }
+
 
 
 
