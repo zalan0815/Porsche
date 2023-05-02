@@ -366,3 +366,6 @@ a{
     transform: translateY(150%);
   }
 }
+figcaption{
+  font-size: 200%;
+}
