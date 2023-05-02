@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="pic/Porsche-Logo.png" type="image/x-icon">
 </head>
 <body>
+  <button class="" onclick="topFunction()" id="myBtn" title="Go to top"><img id="myImage" src="pic/myarrownagy.png" alt=""></button>
+
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid ">
             <div class="col-2 mt-0">
@@ -159,8 +161,38 @@
       </div>
     </div>
 
+    <button onclick="topFunction()" id="myBtn">Go to top</button>
+      <script>
+          let mybutton = document.getElementById("myBtn");
+          let mydiv = document.getElementById("myDiv");     
 
+          window.onscroll = function() {scrollFunction()};      
 
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  mybutton.style.display = "block";
+              } else {
+                  mybutton.style.display = "none";
+              }
+
+          }
+          function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+          }     
+      </script>
+      </script>
+      
+  
+      <script>
+        let gombom = document.getElementById("gomb")
+      
+      
+        function oldalTeteje() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
 
 
       
