@@ -172,14 +172,14 @@ body {
     }
   }
 
-/* 
-style =  
---button-color:
---button-hover-color:
---button-color-after:
- */
+.picMoves{
+  transition: 0.5s ease-in-out;
+}
+.picMoves :hover{
+  transform: scale(1.02);
+  
+}
 
-/* ripple-button white  */
 #riipple-button {
   transition: 0.5s ease-in-out;
   position: relative;
