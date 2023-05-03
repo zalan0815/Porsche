@@ -369,3 +369,6 @@ a{
 figcaption{
   font-size: 200%;
 }
+.cursor:hover{
+  cursor: pointer !important;
+}
