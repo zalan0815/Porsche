@@ -39,16 +39,17 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse my-1" id="navbarNav2">
-              <a id="mybrandsm" class="px-3 nav-link" href="#ASummer">Summer</a>
-              <a id="mybrandsm" class="px-3 nav-link" href="#AWinter">Winter</a>
-              <a id="mybrandsm" class="px-3 nav-link" href="#ASpring">Spring</a>
-              <a id="mybrandsm" class="px-3 nav-link" href="#AAutumn">Autumn</a>
+              <a id="mybrandsm" class="px-3 nav-link" href="#ASummer">Nyár</a>
+              <a id="mybrandsm" class="px-3 nav-link" href="#AWinter">Tél</a>
+              <a id="mybrandsm" class="px-3 nav-link" href="#ASpring">Tavasz</a>
+              <a id="mybrandsm" class="px-3 nav-link" href="#AAutumn">Ősz</a>
             </div>
           </div> 
         </div>
     </nav>
     <div class="container-fluid py-5 px-3 bg-black">
-      <div class="text-center bg-black pb-2"><h3 class="text-white">Summer</h3></div>
+      <div class="text-center bg-black pb-2"><h3 class="text-white">Nyári Képek</h3></div>
+      <div class="py-1 bg-warning"></div>
       <div id="ASummer" class="px-1 bg-white">
         <div class="card-group">
           <div class="col-lg-6 col-sm-12">
@@ -75,8 +76,10 @@
           </div>
         </div>
       </div>
+      <div class="py-1 bg-warning"></div>
       <div class="py-3 bg-black"></div>
-      <div class="text-center bg-black pb-2"><h3 class="text-white">Winter</h3></div>
+      <div class="text-center bg-black pb-2"><h3 class="text-white">Téli Képek</h3></div>
+      <div class="py-1 bg-primary"></div>
       <div id="AWinter" class="px-1 bg-white">
         <div class="card-group">
           <div class="col-lg-6 col-sm-12">
@@ -103,8 +106,10 @@
           </div>
         </div>
       </div>
+      <div class="py-1 bg-primary"></div>
       <div class="py-3 bg-black"></div>
-      <div class="text-center bg-black pb-2"><h3 class="text-white">Spring</h3></div>
+      <div class="text-center bg-black pb-2"><h3 class="text-white">Tavaszi Képek</h3></div>
+      <div class="py-1 bg-success"></div>
       <div id="ASpring" class="px-1 bg-white">
         <div class="card-group">
           <div class="col-lg-6 col-sm-12">
@@ -131,8 +136,10 @@
           </div>
         </div>
       </div>
+      <div class="py-1 bg-success"></div>
       <div class="py-3 bg-black"></div>
-      <div class="text-center bg-black pb-2"><h3 class="text-white">Autumn</h3></div>
+      <div class="text-center bg-black pb-2"><h3 class="text-white">Őszi Képek</h3></div>
+      <div class="py-1 bg-danger"></div>
       <div id="AAutumn" class="px-1 bg-white">
         <div class="card-group">
           <div class="col-lg-6 col-sm-12">
@@ -159,9 +166,17 @@
           </div>
         </div>
       </div>
+      <div class="py-1 bg-danger"></div>
     </div>
+    <div class="bg-black text-center pb-4">
+      <span id="myBtn"><button onclick="topFunction()" id="riipple-button" class="bg-black"><span id="riipple-button" style="--button-color: rgb(197, 0, 0); --button-hover-color:  rgb(161, 0, 0); --button-color-after: black;">Vissza a tetejére</span></button></span>
+    </div>
+    
+    <!-- footer -->
+<div class="containe-fluid w-100 pb-3" id="footer">
+  © 2023 <a class="ps-5" href="https://dealer.porsche.com/hu/budapest/hu-HU/Jogi-nyilatkozat" id="jogi">Jogi nyilatkozat</a>
+</div>
 
-    <button onclick="topFunction()" id="myBtn">Go to top</button>
       <script>
           let mybutton = document.getElementById("myBtn");
           let mydiv = document.getElementById("myDiv");     
