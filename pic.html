@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="pic/Porsche-Logo.png" type="image/x-icon">
 </head>
 <body>
+  <button class="" onclick="topFunction()" id="myBtn" title="Go to top"><img id="myImage" src="pic/myarrownagy.png" alt=""></button>
+
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid ">
             <div class="col-2 mt-0">
@@ -45,10 +47,152 @@
           </div> 
         </div>
     </nav>
-    <div class="bg-black py-3"></div>
+    <div class="container-fluid py-5 px-3 bg-black">
+      <div class="text-center bg-black pb-2"><h3 class="text-white">Summer</h3></div>
+      <div id="ASummer" class="px-1 bg-white">
+        <div class="card-group">
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/pic1.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/pic2.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/pic3.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/pic4.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-3 bg-black"></div>
+      <div class="text-center bg-black pb-2"><h3 class="text-white">Winter</h3></div>
+      <div id="AWinter" class="px-1 bg-white">
+        <div class="card-group">
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/winter1.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/winter2.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/winter3.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/winter4.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-3 bg-black"></div>
+      <div class="text-center bg-black pb-2"><h3 class="text-white">Spring</h3></div>
+      <div id="ASpring" class="px-1 bg-white">
+        <div class="card-group">
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/spring.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/spring1.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/spring2.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/spring3.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-3 bg-black"></div>
+      <div class="text-center bg-black pb-2"><h3 class="text-white">Autumn</h3></div>
+      <div id="AAutumn" class="px-1 bg-white">
+        <div class="card-group">
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/autumn1.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/autumn2.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/autumn3.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div id="mindenOff" class="card picMoves">
+              <img class="p-1 picMoves" src="pic/autumn4.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <button onclick="topFunction()" id="myBtn">Go to top</button>
+      <script>
+          let mybutton = document.getElementById("myBtn");
+          let mydiv = document.getElementById("myDiv");     
 
+          window.onscroll = function() {scrollFunction()};      
 
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  mybutton.style.display = "block";
+              } else {
+                  mybutton.style.display = "none";
+              }
+
+          }
+          function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+          }     
+      </script>
+      </script>
+      
+  
+      <script>
+        let gombom = document.getElementById("gomb")
+      
+      
+        function oldalTeteje() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
 
 
       
